@@ -30,8 +30,7 @@ export const createCropLivestockController = async (req, res) => {
         return res.status(500).send({ error: "Profit is required" });
       case !netGross:
         return res.status(500).send({ error: "Net Gross is required" });
-      case !loss:
-        return res.status(500).send({ error: "Loss is required" });
+
       case !user:
         return res.status(500).send({ error: "User is required" });
       case !address:
@@ -125,8 +124,7 @@ export const updateCropLivestock = async (req, res) => {
         return res.status(500).send({ error: "Profit is required" });
       case !netGross:
         return res.status(500).send({ error: "Net Gross is required" });
-      case !loss:
-        return res.status(500).send({ error: "Loss is required" });
+
       case !address:
         return res.status(500).send({ error: "Address is required" });
     }

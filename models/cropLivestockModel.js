@@ -28,7 +28,6 @@ const cropLivestockSchema = new mongoose.Schema(
     },
     loss: {
       type: Number,
-      required: true,
     },
     address: {
       type: String,
