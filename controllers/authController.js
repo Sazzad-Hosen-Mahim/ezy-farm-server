@@ -2,6 +2,7 @@ import { comparePassword, hashPassword } from "../helpers/authHelper.js";
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
 import JWT from "jsonwebtoken";
+import crypto from "crypto";
 
 export const registerController = async (req, res) => {
   try {
@@ -44,7 +45,10 @@ export const registerController = async (req, res) => {
       address,
       password: hashedPassword,
       answer,
+      emailToken: crypto.randomBytes(64).toString("hex"),
     }).save();
+
+    // sendVerificationEmail(user);
 
     res.status(201).send({
       success: true,

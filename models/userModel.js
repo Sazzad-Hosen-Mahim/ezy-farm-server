@@ -16,6 +16,13 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    verified: {
+      type: Boolean,
+      default: false,
+    },
+    emailToken: {
+      type: String,
+    },
     phone: {
       type: String,
       required: true,
