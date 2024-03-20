@@ -4,8 +4,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "build": "node server.js"
+    "start": "node api.js && node server.js",
+    "build": "node api.js && node server.js"
   },
   "keywords": [],
   "author": "Sazzad Hosen",
