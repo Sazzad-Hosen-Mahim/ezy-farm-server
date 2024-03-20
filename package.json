@@ -1,7 +1,6 @@
 {
   "name": "ezy-firm-server",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -26,5 +25,15 @@
     "nodemailer": "^6.9.9",
     "nodemon": "^3.0.2",
     "slugify": "^1.6.6"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sazzad-Hosen-Mahim/ezy-farm-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sazzad-Hosen-Mahim/ezy-farm-server/issues"
+  },
+  "homepage": "https://github.com/Sazzad-Hosen-Mahim/ezy-farm-server#readme",
+  "description": ""
 }
